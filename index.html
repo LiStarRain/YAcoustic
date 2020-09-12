@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <meta name="description" content="云南原声吉他" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <meta name="keywords" content="音乐,生活,云南原声吉他,吉他独奏,原声音乐,FingerStyle" />
+  <meta name="author" content="LSR" />
+  <meta name="render" content="webkit" />
+  <!-- Font Awesome 字体为您提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。 -->
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" />
+  <!-- 引入轮播组件 -->
+  <link rel="stylesheet" href="./libs/glide/glide.core.min.css" />
+  <link rel="stylesheet" href="./libs/glide/glide.theme.min.css" />
+  <link rel="stylesheet" href="./iconfont/iconfont.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/public.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title>YAcousticGuitar</title>
+  <script src="./libs/scrollReveal/scrollreveal.min.js"></script>
+  <!--引用百度地图API-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="logo">Y.AcousticGuitar</div>
+    <nav class="logIn">
+      <div class="search-box">
+        <input type="search" class="search-text" name="search-content" />
+        <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+      </div>
+      <a href="#home">首页</a>
+      <a href="#acoustic">关于原声音乐</a>
+      <a href="#show">一览风采</a>
+      <a href="#video">视频空间</a>
+      <a href="#team-intro">关于我们</a>
+      <a href="#company-activities">最新动态</a>
+      <!-- <a href="#">视频中心</a> -->
+      <span class="user"><a href="login/login.html">登录</a><span class="fas">&#xf063;</span></span>
+      <ul class="user-message">
+        <li>邮箱：1637516330@qq.com</li>
+        <li>用户名：LiStarRain</li>
+        <li class="shopping"><span class="fas">&#xf07a;</span>购物车</li>
+        <li class="logOff">注销账号</li>
+      </ul>
+      <div class="nav-backdrop"></div>
+    </nav>
+    <!-- 折叠按钮 -->
+    <div class="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+  <!-- 轮播图 -->
+  <div class="glide" id="home">
+    <!-- 轨道组件 -->
+    <div class="glide__track" data-glide-el="track">
+      <!-- 元素容器 -->
+      <div class="glide__slides">
+        <!-- 轮播元素 -->
+        <div class="glide__slide">
+          <div class="slide-caption">
+            <h1>欢迎来到音乐的世界</h1>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis laudantium esse porro iure, est impedit eum consectetur facilis tempora praesentium.</h3>
+            <button class="explore-btn">探索更多</button>
+          </div>
+          <!-- 遮罩层 -->
+          <div class="backdrop"></div>
+          <img src="./images/man_make_guitar.jpg" alt="guitar_maker1" />
+        </div>
+        <div class="glide__slide">
+          <div class="slide-caption">
+            <h1>音乐源于生活</h1>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis laudantium esse porro iure, est impedit eum consectetur facilis tempora praesentium.</h3>
+            <button class="explore-btn">探索更多</button>
+          </div>
+          <!-- 遮罩层 -->
+          <div class="backdrop"></div>
+          <img src="./images/man_make_guitar2.jpg" alt="guitar_maker2" />
+        </div>
+        <div class="glide__slide">
+          <div class="slide-caption">
+            <h1>音乐改变世界</h1>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis laudantium esse porro iure, est impedit eum consectetur facilis tempora praesentium.</h3>
+            <button class="explore-btn">探索更多</button>
+          </div>
+          <!-- 遮罩层 -->
+          <div class="backdrop"></div>
+          <img src="./images/man_make_guitar3.jpg" alt="guitar_maker3" />
+        </div>
+      </div>
+    </div>
+    <!-- 控制器 -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        <
+      </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        >
+      </button>
+    </div>
+    <!-- 计数器 -->
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+      <button class="glide__bullet" data-glide-dir="=2"></button>
+    </div>
+  </div>
+  <!-- 内容区 -->
+  <div class="content-wrapper">
+    <!-- 原声音乐 -->
+    <section class="about-acoustic" id="acoustic">
+      <h2 class="title1">什么是原声吉他</h2>
+      <p class="intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea voluptas consectetur velit suscipit obcaecati!</p>
+      <div class="features">
+        <div class="feature">
+          <i class="iconfont iconguitar-solid"></i>
+          <h4 class="feature-title">原声吉他</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+        <div class="feature">
+          <i class="iconfont iconMusicdisc"></i>
+          <h4 class="feature-title">原声音乐</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+        <div class="feature">
+          <i class="iconfont iconmusicrecording"></i>
+          <h4 class="feature-title">原声吉他录音</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+        <div class="feature">
+          <i class="iconfont iconMusicAcc"></i>
+          <h4 class="feature-title">原声吉他音乐</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+        <div class="feature">
+          <i class="iconfont iconMUSICPLAYER"></i>
+          <h4 class="feature-title">原声吉他演奏</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+        <div class="feature">
+          <i class="iconfont iconmusiclover"></i>
+          <h4 class="feature-title">原声吉他保养</h4>
+          <p class="feature-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae eos atque unde adipisci laborum?</p>
+        </div>
+      </div>
+    </section>
+    <!-- 一览风采 -->
+    <section class="showcase section-bg" id="show">
+      <h2 class="title1">一览风采</h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="*">全部</button>
+        <button class="filter-btn" data-filter=".guitar">吉他</button>
+        <button class="filter-btn" data-filter=".artist">演奏家</button>
+        <button class="filter-btn" data-filter=".maker">制琴坊</button>
+      </div>
+      <div class="cases">
+        <div class="case-item artist">
+          <img src="./images/guitar-images/artist1.jpg" alt="guitar">
+        </div>
+        <div class="case-item guitar">
+          <img src="./images/guitar-images/guitar3.jpg" alt="guitar">
+        </div>
+        <div class="case-item guitar">
+          <img src="./images/guitar-images/guitar4.jpg" alt="guitar">
+        </div>
+        <div class="case-item maker" >
+          <img src="./images/guitar-images/guitar_work3.jpg" alt="guitar">
+        </div>
+        <div class="case-item maker" >
+          <img src="./images/guitar-images/guitar_work4.jpg" alt="guitar">
+        </div>
+        <div class="case-item maker" >
+          <img src="./images/guitar-images/guitar_work2.jpg" alt="guitar">
+        </div>
+        <div class="case-item guitar">
+          <img src="./images/guitar-images/guitar5.jpg" alt="guitar">
+        </div>
+        <div class="case-item guitar">
+          <img src="./images/guitar-images/guitar6.jpg" alt="guitar">
+        </div>
+      </div>
+    </section>
+    <!-- 视频空间 -->
+    <section id="video">
+      <div class="video-glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+            <li class="glide__slide"></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4"></button>
+          <button class="glide__bullet" data-glide-dir="=5"></button>
+          <button class="glide__bullet" data-glide-dir="=6"></button>
+          <button class="glide__bullet" data-glide-dir="=7"></button>
+        </div>
+      </div>
+    </section>
+    <!-- 关于我们 -->
+    <section class="team-intro" id="team-intro">
+      <h2 class="title1">关于我们</h2>
+      <div class="members">
+        <div class="member">
+          <div class="member-image">
+            <img src="./images/man-wearing-black-suit-2955376.jpg" alt="" />
+          </div>
+          <h4 class="name">张三</h4>
+          <p class="position">职位A</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="./images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg" alt="">
+          </div>
+          <h4 class="name">李四</h4>
+          <p class="position">职位B</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="images/business-woman-2697954_1920.jpg" alt="">
+          </div>
+          <h4 class="name">王五</h4>
+          <p class="position">职位C</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="./images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+          </div>
+          <h4 class="name">赵六</h4>
+          <p class="position">职位C</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 最新动态 -->
+    <section class="company-activities" id="company-activities">
+      <h2 class="title1">最新动态</h2>
+      <p class="intro">关注实时动态，了解最新消息</p>
+      <div class="activities">
+        <div class="activity">
+          <div class="activity-image-wrapper">
+            <img src="images/guitar-images/guitar2_3.jpg">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i>
+              2020年8月16日
+            </p>
+            <p class="comments">
+              <i class="far fa-comments"></i>
+              33条评论
+            </p>
+          </div>
+          <h3 class="activity-title">猪肉又涨价了</h3>
+          <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis unde quidem, eum laudantium veniam itaque asperiores sint minus magni dolore fugiat suscipit dolores saepe quas nesciunt maiores commodi cum?</article>
+          <button class="read-more-btn">阅读更多</button>
+        </div>
+        <div class="activity">
+          <div class="activity-image-wrapper">
+            <img src="images/guitar-images/guitar2_2.jpg">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i>
+              2020年8月16日
+            </p>
+            <p class="comments">
+              <i class="far fa-comments"></i>
+              33条评论
+            </p>
+          </div>
+          <h3 class="activity-title">零食又涨价了</h3>
+          <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis unde quidem, eum laudantium veniam itaque asperiores sint minus magni dolore fugiat suscipit dolores saepe quas nesciunt maiores commodi cum?</article>
+          <button class="read-more-btn">阅读更多</button>
+        </div>
+        <div class="activity">
+          <div class="activity-image-wrapper">
+            <img src="images/guitar-images/guitar2_1.jpg">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i>
+              2020年8月16日
+            </p>
+            <p class="comments">
+              <i class="far fa-comments"></i>
+              33条评论
+            </p>
+          </div>
+          <h3 class="activity-title">可乐又涨价了</h3>
+          <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis unde quidem, eum laudantium veniam itaque asperiores sint minus magni dolore fugiat suscipit dolores saepe quas nesciunt maiores commodi cum?</article>
+          <button class="read-more-btn">阅读更多</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- 页脚 -->
+  <footer>
+    <div class="footer-menus">
+      <div class="contact-us footer-menu">
+        <p class="menu-title">联系我们</p>
+        <p>地址：云南省昆明市呈贡区昆明理工大学</p>
+        <p>电话：121121123</p>
+        <p>传真：1312312133</p>
+        <p>电子邮箱：admin@abc.com</p>
+      </div>
+      <div class="service-menu footer-menu">
+        <p class="menu-title">服务概览</p>
+        <ul class="menu-items">
+          <li><a href="#">艺术教育</a></li>
+          <li><a href="#">乐器销售</a></li>
+          <li><a href="#">演出承办</a></li>
+          <li><a href="#">音乐录制</a></li>
+        </ul>
+      </div>
+      <div class="teach-menu footer-menu">
+        <p class="menu-title">教学范围</p>
+        <ul class="menu-items">
+          <li><a href="#">弹唱</a></li>
+          <li><a href="#">指弹</a></li>
+          <li><a href="#">钢琴</a></li>
+          <li><a href="#">架子鼓</a></li>
+        </ul>
+      </div>
+      <div class="brand-menu footer-menu">
+        <p class="menu-title">品牌概览</p>
+        <ul class="menu-items">
+          <li><a href="#">Eastman</a></li>
+          <li><a href="#">Avian</a></li>
+          <li><a href="#">Headway</a></li>
+          <li><a href="#">Martin</a></li>
+        </ul>
+      </div>
+      <div class="position">
+        <p class="menu-title">具体地址</p>
+        <!--百度地图容器-->
+      <div style="width:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+      </div>
+    </div>
+    <p class="icp-info">京ICP备 1234567-1 号</p>
+    <p class="rights">&copy;2020 云南原声吉他馆</p>
+    <div class="scrollToTop">
+      <a href="#home"><i class="fas fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="./libs/glide/glide.min.js"></script><!-- 引入轮播组件 -->
+  <script src="./libs/anime/anime.min.js"></script><!-- 动画组件 -->
+  <script src="./libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="./libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="./index.js"></script>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      // addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(102.865783,24.8615),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"这里需要提供具体地址",title:"怡园",imageOffset: {width:-46,height:-21},position:{lat:24.861016,lng:102.865563}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <meta name="description" content="云南原声吉他" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <meta name="keywords" content="音乐,生活,云南原声吉他,吉他独奏,原声音乐,FingerStyle" />
+  <meta name="author" content="LSR" />
+  <meta name="render" content="webkit" />
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="login.css">
+  <title>YAcousticGuitar-Login</title>
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="logo">Y.AcousticGuitar</div>
+    <nav class="logIn">
+      <div class="search-box">
+        <input type="search" class="search-text" name="search-content" />
+        <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+      </div>
+      <a href="../index.html#home">首页</a>
+      <a href="../index.html#acoustic">关于原声音乐</a>
+      <a href="../index.html#show">一览风采</a>
+      <a href="../index.html#team-intro">关于我们</a>
+      <a href="../index.html#company-activities">最新动态</a>
+      <!-- <a href="#">视频中心</a> -->
+      <a href="login.html">登录</a>
+      <div class="nav-backdrop"></div>
+    </nav>
+    <!-- 折叠按钮 -->
+    <div class="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+  <!-- 主体区域 -->
+  <div class="container">
+    <div class="content login">
+      <div class="switch">
+        <span id="login" class="active">登录</span>
+        <span>/</span>
+        <span id="signUp">注册</span>
+      </div>
+      <form action="">
+        <div id="email" class="input" placeholder="电子邮箱">
+          <input type="text" name="email" value="">
+        </div>
+        <div class="input" placeholder="用户名"">
+          <input type="text" name="username" value="" maxlength="8">
+        </div>
+        <div class="input" placeholder="密码">
+          <input type="password" name="password" value="" autocomplete="off" maxlength="10">
+        </div>
+        <div id="repeat" class="input" placeholder="重新输入密码">
+          <input type="password" name="password-repeat" value="" autocomplete="off" maxlength="10">
+        </div>
+        <div id="sex" class="input-radio">
+          <label for="male">性别：</label>
+          <input type="radio" id="male" name="sex" value=0>男
+          <input type="radio" name="sex" value=1>女
+        </div>
+        <div id="age" class="input" placeholder="年龄">
+          <input name="age" type="number" value="" min="0" max="100">
+        </div>
+        <div id="phone" class="input" placeholder="电话">
+          <input name="phone" type="tel" value="">
+        </div>
+        <span>忘记密码？</span>
+        <button type="button" class="submit">
+          <p>登录</p>
+          <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <!-- 用svg来绘图 -->
+          <svg width="30px" height="30px" stroke="white" fill="none" class="check-mark">
+            <polyline points="2,10 12,18 28,2"></polyline>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./login.js"></script>
+</body>
+</html>
